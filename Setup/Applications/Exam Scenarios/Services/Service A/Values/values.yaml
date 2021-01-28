@@ -1,9 +1,7 @@
 name: service-a
 namespace: ${infra.kubernetes.namespace}
 metrics.serviceMonitor.namespace: prometheus
-image.tag: latest
+image:
+  repository: bitnami/nginx
+  tag: 1.19.6-debian-10-r37
 
----
-apiVersion: v1
-kind: Namespace
-metadata: {{.Values.namespace}}
