@@ -1,3 +1,4 @@
 name: Testy
 namespace: ${workflow.variables.namespace}
 image: 1.19
+## Adding comments for fun!
