@@ -1,1 +1,2 @@
+name: testy
 namespace: ${workflow.variables.namespace}
