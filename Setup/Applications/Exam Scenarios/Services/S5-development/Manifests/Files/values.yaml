@@ -2,7 +2,7 @@ name: pr-trigger-test
 replicas: 1
 
 image: ${artifact.metadata.image}
-dockercfg: ${artifact.source.dockerconfig}
+# dockercfg: ${artifact.source.dockerconfig}
 
 createNamespace: true
 namespace: ${infra.kubernetes.namespace}
