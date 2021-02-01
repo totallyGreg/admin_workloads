@@ -11,7 +11,6 @@ triggerCondition:
   - pull_request
   repositoryType: GITHUB
 workflowVariables:
-- name: image
 - name: namespace
   value: ephemeral${pullrequest.id}
 - entityType: SERVICE
