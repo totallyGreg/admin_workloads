@@ -1,0 +1,3 @@
+harnessApiVersion: '1.0'
+type: PIPELINE
+description: Deploy helm chart with canary
