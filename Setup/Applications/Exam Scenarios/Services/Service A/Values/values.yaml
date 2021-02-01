@@ -1,4 +1,3 @@
-name: service-a-${workflow.variables.branch}
 namespace: ${workflow.variables.namespace}
 metrics.serviceMonitor.namespace: prometheus
 image: ${workflow.variables.image}
