@@ -1,3 +1,23 @@
 harnessApiVersion: '1.0'
 type: PIPELINE
 description: Deploy helm chart with canary
+pipelineStages:
+- type: ENV_STATE
+  name: Canary Deployment
+  parallel: false
+  skipCondition:
+    type: DO_NOT_SKIP
+  stageName: STAGE 1
+  workflowName: Helm Deploy with Canary
+  workflowVariables:
+  - name: replicas
+    value: '1'
+  - entityType: ENVIRONMENT
+    name: Environment
+    value: Development
+  - entityType: SERVICE
+    name: Service
+    value: S10-Native Helm Charts
+  - entityType: INFRASTRUCTURE_DEFINITION
+    name: InfraDefinition_HELM
+    value: az-dev-helm
