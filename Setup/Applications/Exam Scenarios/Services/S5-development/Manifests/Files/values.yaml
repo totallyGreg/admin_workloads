@@ -1,8 +1,10 @@
-name: harness-example
+name: pr-trigger-test
 replicas: 1
 
-image: ${artifact.metadata.image}
-dockercfg: ${artifact.source.dockerconfig}
+image: library/nginx:latest
+
+# image: ${artifact.metadata.image}
+# dockercfg: ${artifact.source.dockerconfig}
 
 createNamespace: true
 namespace: ${infra.kubernetes.namespace}
@@ -25,4 +27,4 @@ env:
   config:
     key1: value1
   secrets:
-    key2: value2
+    key2: value3
