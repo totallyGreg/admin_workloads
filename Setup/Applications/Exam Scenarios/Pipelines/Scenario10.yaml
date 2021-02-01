@@ -14,13 +14,13 @@ pipelineStages:
     value: '1'
   - entityType: ENVIRONMENT
     name: Environment
-    value: Development
+    value: Staging
   - entityType: SERVICE
     name: Service
     value: S10-Native Helm Charts
   - entityType: INFRASTRUCTURE_DEFINITION
     name: InfraDefinition_HELM
-    value: az-dev-helm
+    value: az-staging-helm
 - type: APPROVAL
   name: Approval 1
   parallel: false
