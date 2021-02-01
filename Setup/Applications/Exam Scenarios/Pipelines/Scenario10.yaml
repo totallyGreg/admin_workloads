@@ -27,7 +27,7 @@ pipelineStages:
   properties:
     userGroups:
     - Account Administrator
-    variables: null
+    workflowVariables: null
     stageName: STAGE 2
     timeoutMillis: 86400000
     approvalStateType: USER_GROUP
@@ -35,3 +35,20 @@ pipelineStages:
   skipCondition:
     type: DO_NOT_SKIP
   stageName: STAGE 2
+- type: ENV_STATE
+  name: Helm Deploy
+  parallel: false
+  skipCondition:
+    type: DO_NOT_SKIP
+  stageName: STAGE 3
+  workflowName: Helm Deploy
+  workflowVariables:
+  - entityType: ENVIRONMENT
+    name: Environment
+    value: Staging
+  - entityType: SERVICE
+    name: Service
+    value: S10-Native Helm Charts
+  - entityType: INFRASTRUCTURE_DEFINITION
+    name: InfraDefinition_HELM
+    value: az-staging-helm
