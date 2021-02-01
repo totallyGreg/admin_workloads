@@ -2,7 +2,7 @@ name: service-a
 replicas: 1
 
 image: library/nginx:1.19.4
-dockercfg: ${artifact.source.dockerconfig}
+# dockercfg: ${artifact.source.dockerconfig}
 
 createNamespace: true
 namespace: ${infra.kubernetes.namespace}
