@@ -1,4 +1,4 @@
-name: harness-example
+name: service-c
 replicas: 1
 
 image: ${artifact.metadata.image}
