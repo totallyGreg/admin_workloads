@@ -161,5 +161,4 @@ userVariables:
 - type: TEXT
   fixed: false
   mandatory: false
-  name: canary_replicas
-  value: '1'
+  name: replicas
