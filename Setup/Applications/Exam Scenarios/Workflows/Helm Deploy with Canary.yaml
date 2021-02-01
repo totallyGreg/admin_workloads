@@ -158,3 +158,8 @@ userVariables:
   fixed: false
   mandatory: true
   name: InfraDefinition_HELM
+- type: TEXT
+  fixed: false
+  mandatory: false
+  name: canary_replicas
+  value: '1'
