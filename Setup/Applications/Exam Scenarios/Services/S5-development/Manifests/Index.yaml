@@ -3,7 +3,7 @@ type: APPLICATION_MANIFEST
 gitFileConfig:
   branch: test-dev
   connectorName: Admin_workloads
-  filePath: Setup/Applications/Exam\ Scenarios/Services/S5-development/Manifests/Files
+  filePath: Setup/Applications/Exam\ Scenarios/Services/S5-development/Manifests
   useBranch: true
   useInlineServiceDefinition: false
 storeType: Remote
