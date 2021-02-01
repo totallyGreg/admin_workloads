@@ -110,3 +110,11 @@ userVariables:
   fixed: false
   mandatory: true
   name: InfraDefinition_KUBERNETES
+- type: TEXT
+  fixed: false
+  mandatory: false
+  name: namespace
+- type: TEXT
+  fixed: false
+  mandatory: false
+  name: image
