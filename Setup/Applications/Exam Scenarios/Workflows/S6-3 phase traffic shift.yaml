@@ -83,9 +83,12 @@ phases:
     - type: K8S_DELETE
       name: Delete
       properties:
-        deleteNamespacesForRelease: true
-        resources: '*'
+        deleteNamespacesForRelease: false
+        resources: ${k8s.canaryWorkload}
         stateTimeoutInMinutes: 10
+        templateUuid: null
+        templateVariables: null
+        templateVersion: null
     stepsInParallel: false
   provisionNodes: false
   serviceName: S6-traffic
