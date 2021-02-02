@@ -1,5 +1,5 @@
 name: istio-example
-replicas: 1
+replicas: 3
 
 image: library/nginx:1.19.5
 #dockercfg: ${artifact.source.dockerconfig}
