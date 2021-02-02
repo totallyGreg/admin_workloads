@@ -34,6 +34,16 @@ phases:
     stepsInParallel: false
   - type: K8S_PHASE_STEP
     name: Verify
+    steps:
+    - type: K8S_TRAFFIC_SPLIT
+      name: Traffic Split
+      properties:
+        istioDestinationWeights:
+        - destination: ${k8s.canaryDestination}
+          weight: '20'
+        - destination: ${k8s.stableDestination}
+          weight: '80'
+        virtualServiceName: ${k8s.virtualServiceName}
     stepsInParallel: false
   - type: K8S_PHASE_STEP
     name: Wrap Up
