@@ -50,17 +50,6 @@ phases:
     stepsInParallel: false
   - type: K8S_PHASE_STEP
     name: Wrap Up
-    steps:
-    - type: K8S_DELETE
-      name: Canary Delete
-      properties:
-        deleteNamespacesForRelease: true
-        instanceUnitType: COUNT
-        resources: '*'
-        stateTimeoutInMinutes: 10
-        templateUuid: null
-        templateVariables: null
-        templateVersion: null
     stepsInParallel: false
   provisionNodes: false
   serviceName: test namespace
