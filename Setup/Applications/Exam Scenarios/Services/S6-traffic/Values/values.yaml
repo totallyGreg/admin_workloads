@@ -1,0 +1,2 @@
+namespace: ${workflow.variables.namespace}
+branch: ${workflow.variables.branch}
