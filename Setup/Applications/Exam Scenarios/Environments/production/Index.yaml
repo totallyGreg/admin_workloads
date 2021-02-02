@@ -1,0 +1,5 @@
+harnessApiVersion: '1.0'
+type: ENVIRONMENT
+configMapYamlByServiceTemplateName: {}
+description: Cloned from environment production of application Exam Scenario 1
+environmentType: PROD
