@@ -1,7 +1,7 @@
 name: istio-example
 replicas: 3
 
-image: library/nginx:1.19.5
+image: library/nginx:1.19.6
 #dockercfg: ${artifact.source.dockerconfig}
 
 createNamespace: true
