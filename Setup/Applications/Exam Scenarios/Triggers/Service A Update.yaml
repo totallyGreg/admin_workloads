@@ -14,3 +14,6 @@ triggerCondition:
   - Setup/Applications/Exam\ Scenarios/Services/Service\ A/Manifests/Files
   gitConnectorId: _xY4NzjGRiqfccNOTJ0RdA
   repositoryType: GITHUB
+workflowVariables:
+- name: image
+- name: namespace
