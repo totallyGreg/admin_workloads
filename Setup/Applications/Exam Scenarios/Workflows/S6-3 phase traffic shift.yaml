@@ -39,10 +39,21 @@ phases:
       name: Traffic Split
       properties:
         istioDestinationWeights:
-        - destination: ${k8s.canaryDestination}
-          weight: '20'
-        - destination: ${k8s.stableDestination}
-          weight: '80'
+        - destination: |-
+            host: "myservice-svc"
+            subset: "canary"
+          weight: '33'
+        - destination: |-
+            host: "myservice-svc"
+            subset: "canary"
+          weight: '33'
+        - destination: |-
+            host: "myservice-svc"
+            subset: "canary"
+          weight: '34'
+        templateUuid: null
+        templateVariables: null
+        templateVersion: null
         virtualServiceName: ${k8s.virtualServiceName}
     stepsInParallel: false
   - type: K8S_PHASE_STEP
