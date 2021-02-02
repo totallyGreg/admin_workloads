@@ -121,4 +121,10 @@ rollbackPhases:
   provisionNodes: false
   serviceName: S6-traffic
   statefulSet: false
-templatized: false
+templatized: true
+userVariables:
+- type: TEXT
+  fixed: false
+  mandatory: false
+  name: namespace
+  value: default
