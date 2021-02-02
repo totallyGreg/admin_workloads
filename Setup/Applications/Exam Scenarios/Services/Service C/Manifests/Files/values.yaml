@@ -1,7 +1,7 @@
 name: service-c
 replicas: 1
 
-image: library/nginx:1.19.6
+image: library/nginx:1.19.7
 # dockercfg: ${artifact.source.dockerconfig}
 
 createNamespace: true
