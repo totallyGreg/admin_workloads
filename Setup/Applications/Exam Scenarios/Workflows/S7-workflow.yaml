@@ -19,23 +19,6 @@ phases:
     name: Collect Artifact
     steps:
     - type: SHELL_SCRIPT
-      name: Run Groovy Script
-      properties:
-        commandPath: null
-        connectionAttributes: null
-        executeOnDelegate: true
-        host: null
-        publishAsVar: false
-        sshKeyRef: null
-        sweepingOutputName: null
-        sweepingOutputScope: null
-        templateExpressions: null
-        timeoutMillis: 30000
-      templateUri: Altoros-7852/Run Groovy Script:latest
-      templateVariables:
-      - name: args
-      - name: groovy
-    - type: SHELL_SCRIPT
       name: Run Groovy Script_1
       properties:
         executeOnDelegate: true
