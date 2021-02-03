@@ -41,4 +41,10 @@ phases:
     stepsInParallel: false
   provisionNodes: false
   statefulSet: false
-templatized: false
+templatized: true
+userVariables:
+- type: TEXT
+  description: URL of groovy script to run
+  fixed: false
+  mandatory: false
+  name: URL
