@@ -5,7 +5,7 @@ commandUnits:
 - command: curl -slO ${artifact.url}
   commandUnitType: EXEC
   deploymentType: SSH
-  name: Exec-1
+  name: Get zip artifact
   scriptType: BASH
   workingDirectory: /tmp
 - command: |2-
