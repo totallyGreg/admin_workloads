@@ -45,7 +45,6 @@ phases:
         assertion: ${httpResponseCode}==200
         body: ''
         executeWithPreviousSteps: false
-        header: ''
         method: GET
         publishAsVar: false
         responseProcessingExpressions: ''
