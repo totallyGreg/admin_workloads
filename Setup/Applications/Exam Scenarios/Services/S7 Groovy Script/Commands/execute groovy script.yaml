@@ -1,5 +1,0 @@
-harnessApiVersion: '1.0'
-type: OTHER
-commandUnitType: COMMAND
-targetToAllEnv: true
-templateUri: Altoros-7852/Execute Remote Groovy Script:latest
