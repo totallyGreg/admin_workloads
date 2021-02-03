@@ -18,6 +18,22 @@ phases:
   - type: COLLECT_ARTIFACT
     name: Collect Artifact
     steps:
+    - type: COMMAND
+      name: execute groovy script
+      properties:
+        commandName: execute groovy script
+        commandType: OTHER
+        connectionAttributes: null
+        executeOnDelegate: true
+        host: null
+        outputVars: ''
+        publishAsVar: false
+        sshKeyRef: null
+        sweepingOutputName: null
+        sweepingOutputScope: null
+        templateExpressions: null
+        timeoutMillis: 60000
+      templateUri: Altoros-7852/execute groovy script:latest
     - type: SHELL_SCRIPT
       name: Run Groovy Script
       properties:
@@ -37,22 +53,6 @@ phases:
       templateVariables:
       - name: args
       - name: groovy
-    - type: COMMAND
-      name: execute groovy script
-      properties:
-        commandName: execute groovy script
-        commandType: OTHER
-        connectionAttributes: null
-        executeOnDelegate: true
-        host: null
-        outputVars: ''
-        publishAsVar: false
-        sshKeyRef: null
-        sweepingOutputName: null
-        sweepingOutputScope: null
-        templateExpressions: null
-        timeoutMillis: 60000
-      templateUri: Altoros-7852/execute groovy script:latest
     stepsInParallel: false
   - type: WRAP_UP
     name: Wrap Up
