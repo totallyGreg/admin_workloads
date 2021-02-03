@@ -35,8 +35,8 @@ phases:
         timeoutMillis: 30000
       templateUri: Altoros-7852/Run Groovy Script:latest
       templateVariables:
-      - name: ARGS
-      - name: GROOVY
+      - name: args
+      - name: groovy
     stepsInParallel: false
   - type: WRAP_UP
     name: Wrap Up
