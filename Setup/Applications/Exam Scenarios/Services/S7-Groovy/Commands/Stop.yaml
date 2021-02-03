@@ -8,9 +8,4 @@ commandUnits:
   name: Stop Service
   scriptType: BASH
   workingDirectory: $WINGS_RUNTIME_PATH
-- command: echo "service stopped check should be added here"
-  commandUnitType: PROCESS_CHECK_STOPPED
-  deploymentType: SSH
-  name: Service Stopped
-  scriptType: BASH
 targetToAllEnv: true
