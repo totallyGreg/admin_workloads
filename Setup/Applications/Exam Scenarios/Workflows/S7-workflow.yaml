@@ -20,6 +20,15 @@ phases:
     steps:
     - type: ARTIFACT_COLLECTION
       name: Artifact Collection
+    - type: SHELL_SCRIPT
+      name: Run Groovy Script
+      properties:
+        executeOnDelegate: true
+        timeoutMillis: 30000
+      templateUri: Altoros-7852/Run Groovy Script:latest
+      templateVariables:
+      - name: args
+      - name: groovy
     stepsInParallel: false
   - type: WRAP_UP
     name: Wrap Up
