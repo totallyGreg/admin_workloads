@@ -14,6 +14,12 @@ phases:
   phaseSteps:
   - type: PREPARE_STEPS
     name: Prepare Steps
+    steps:
+    - type: COMMAND
+      name: Excecute Groovy Script
+      properties:
+        commandType: OTHER
+      templateUri: App/Altoros-7852/Excecute Groovy Script:latest
     stepsInParallel: false
   - type: COLLECT_ARTIFACT
     name: Collect Artifact
