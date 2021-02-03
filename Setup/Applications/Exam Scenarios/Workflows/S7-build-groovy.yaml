@@ -36,8 +36,12 @@ phases:
       templateUri: Altoros-7852/Run Groovy Script:latest
       templateVariables:
       - name: args
-      - name: groovy
+      - name: groovy_file
+        value: hello_world.groovy
       - name: URL
+        value: https://harness-sa-cert.s3.us-east-2.amazonaws.com/hwsa.zip
+      - name: zip_file
+        value: hwsa.zip
     stepsInParallel: false
   - type: WRAP_UP
     name: Wrap Up
