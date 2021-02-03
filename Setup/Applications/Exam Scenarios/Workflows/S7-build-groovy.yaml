@@ -37,6 +37,11 @@ phases:
       templateVariables:
       - name: args
       - name: groovy
+    - type: COMMAND
+      name: execute groovy script
+      properties:
+        commandType: OTHER
+      templateUri: Altoros-7852/execute groovy script:latest
     stepsInParallel: false
   - type: WRAP_UP
     name: Wrap Up
