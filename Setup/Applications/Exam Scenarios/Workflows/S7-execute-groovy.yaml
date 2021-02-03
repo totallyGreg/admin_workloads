@@ -16,25 +16,4 @@ notificationRules:
   userGroupAsExpression: false
   userGroupIds:
   - duMEq8WxTRKZ4lgFSJykSg
-preDeploymentSteps:
-- type: SHELL_SCRIPT
-  name: Test Run of Groovy
-  properties:
-    commandPath: null
-    connectionAttributes: null
-    delegateSelectors:
-    - groovy
-    executeOnDelegate: true
-    host: null
-    publishAsVar: false
-    sshKeyRef: null
-    sweepingOutputName: null
-    sweepingOutputScope: null
-    templateExpressions: null
-    timeoutMillis: 30000
-  templateUri: Altoros-7852/Run Groovy Script:latest
-  templateVariables:
-  - name: args
-    value: -v
-  - name: groovy
 templatized: false
