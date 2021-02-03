@@ -14,25 +14,6 @@ phases:
   phaseSteps:
   - type: PREPARE_STEPS
     name: Prepare Steps
-    steps:
-    - type: COMMAND
-      name: Excecute Groovy Script
-      properties:
-        commandName: Excecute Groovy Script
-        commandType: OTHER
-        connectionAttributes: null
-        delegateSelectors:
-        - groovy
-        executeOnDelegate: true
-        host: null
-        outputVars: ''
-        publishAsVar: false
-        sshKeyRef: null
-        sweepingOutputName: null
-        sweepingOutputScope: null
-        templateExpressions: null
-        timeoutMillis: 60000
-      templateUri: App/Altoros-7852/Excecute Groovy Script:latest
     stepsInParallel: false
   - type: COLLECT_ARTIFACT
     name: Collect Artifact
