@@ -20,6 +20,12 @@ commandUnits:
   deploymentType: SSH
   name: Setup Runtime Paths
   scriptType: BASH
+- command: curl -slO ${artifact.url}
+  commandUnitType: EXEC
+  deploymentType: SSH
+  name: Exec-1
+  scriptType: BASH
+  workingDirectory: /tmp
 - artifactVariableName: artifact
   commandUnitType: SCP
   deploymentType: SSH
