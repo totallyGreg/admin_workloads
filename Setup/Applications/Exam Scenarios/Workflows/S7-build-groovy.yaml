@@ -40,7 +40,18 @@ phases:
     - type: COMMAND
       name: execute groovy script
       properties:
+        commandName: execute groovy script
         commandType: OTHER
+        connectionAttributes: null
+        executeOnDelegate: true
+        host: null
+        outputVars: ''
+        publishAsVar: false
+        sshKeyRef: null
+        sweepingOutputName: null
+        sweepingOutputScope: null
+        templateExpressions: null
+        timeoutMillis: 60000
       templateUri: Altoros-7852/execute groovy script:latest
     stepsInParallel: false
   - type: WRAP_UP
