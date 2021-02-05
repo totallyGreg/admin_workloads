@@ -6,6 +6,7 @@ templateUri: Altoros-7852/Power Shell Commands/Install IIS Application:1
 templateVariables:
 - name: ReleaseNo
 - name: ServiceName
+  value: ToDoList
 - name: AppPoolName
   value: DefaultAppPool
 - name: AppPoolDotNetVersion
