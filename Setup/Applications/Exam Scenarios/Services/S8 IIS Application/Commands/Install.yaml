@@ -2,7 +2,7 @@ harnessApiVersion: '1.0'
 type: INSTALL
 commandUnitType: COMMAND
 targetToAllEnv: true
-templateUri: Altoros-7852/Power Shell Commands/Install IIS Application:1
+templateUri: Altoros-7852/Power Shell Commands/Install IIS Application:latest
 templateVariables:
 - name: ReleaseNo
 - name: ServiceName
