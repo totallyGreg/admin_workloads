@@ -1,0 +1,8 @@
+harnessApiVersion: '1.0'
+type: ARTIFACTORY
+artifactPattern: '*'
+metadataOnly: true
+repositoryName: iis-website
+repositoryType: any
+serverName: Harness Artifactory
+useDockerFormat: false
