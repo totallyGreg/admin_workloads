@@ -1,0 +1,12 @@
+harnessApiVersion: '1.0'
+type: INFRA_DEFINITION
+cloudProviderType: AZURE
+deploymentType: WINRM
+infrastructure:
+- type: AZURE_INFRA
+  cloudProviderName: Microsoft Azure Cloud Orchestration
+  resourceGroup: jgreg-aks-network-rg
+  subscriptionId: 06129677-ee8e-456a-996d-5e2dc8ad5279
+  winRmConnectionAttributesName: jgreg-iis
+scopedServices:
+- S8 IIS Website
