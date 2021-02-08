@@ -1,2 +1,10 @@
 harnessApiVersion: '1.0'
 type: PIPELINE
+pipelineStages:
+- type: ENV_STATE
+  name: S8 Deploy IIS Application
+  parallel: false
+  skipCondition:
+    type: DO_NOT_SKIP
+  stageName: STAGE 1
+  workflowName: S8 Deploy IIS Application
