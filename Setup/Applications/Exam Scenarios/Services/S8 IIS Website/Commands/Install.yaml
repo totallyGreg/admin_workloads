@@ -5,7 +5,9 @@ targetToAllEnv: true
 templateUri: Altoros-7852/Power Shell Commands/Install IIS Website:latest
 templateVariables:
 - name: ReleaseNo
+  value: '1'
 - name: ServiceName
+  value: ToDoList
 - name: AppPoolName
   value: DefaultAppPool
 - name: AppPoolDotNetVersion
