@@ -35,26 +35,6 @@ phases:
   - type: K8S_PHASE_STEP
     name: Verify
     steps:
-    - type: K8S_TRAFFIC_SPLIT
-      name: Traffic Split
-      properties:
-        istioDestinationWeights:
-        - destination: |-
-            host: "myservice-svc"
-            subset: "canary"
-          weight: '33'
-        - destination: |-
-            host: "myservice-svc"
-            subset: "canary"
-          weight: '33'
-        - destination: |-
-            host: "myservice-svc"
-            subset: "canary"
-          weight: '34'
-        templateUuid: null
-        templateVariables: null
-        templateVersion: null
-        virtualServiceName: ${k8s.virtualServiceName}
     - type: APPROVAL
       name: Approve 33%
       properties:
