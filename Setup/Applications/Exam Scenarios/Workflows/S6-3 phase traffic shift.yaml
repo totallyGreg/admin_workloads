@@ -92,6 +92,13 @@ phases:
         - destination: ${k8s.stableDestination}
           weight: '0'
         virtualServiceName: ${k8s.virtualServiceName}
+    - type: APPROVAL
+      name: Approve 66%
+      properties:
+        approvalStateType: USER_GROUP
+        timeoutMillis: 86400000
+        userGroups:
+        - duMEq8WxTRKZ4lgFSJykSg
     stepsInParallel: false
   - type: K8S_PHASE_STEP
     name: Wrap Up
