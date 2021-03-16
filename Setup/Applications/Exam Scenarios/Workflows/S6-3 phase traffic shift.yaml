@@ -70,15 +70,6 @@ phases:
         - destination: ${k8s.stableDestination}
           weight: '34'
         virtualServiceName: ${k8s.virtualServiceName}
-    - type: K8S_TRAFFIC_SPLIT
-      name: Full Traffic
-      properties:
-        istioDestinationWeights:
-        - destination: ${k8s.canaryDestination}
-          weight: '100'
-        - destination: ${k8s.stableDestination}
-          weight: '0'
-        virtualServiceName: ${k8s.virtualServiceName}
     stepsInParallel: false
   - type: K8S_PHASE_STEP
     name: Wrap Up
