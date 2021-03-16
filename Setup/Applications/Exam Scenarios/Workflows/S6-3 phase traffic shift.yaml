@@ -76,6 +76,13 @@ phases:
         - destination: ${k8s.stableDestination}
           weight: '34'
         virtualServiceName: ${k8s.virtualServiceName}
+    - type: APPROVAL
+      name: Approve 33%
+      properties:
+        approvalStateType: USER_GROUP
+        timeoutMillis: 86400000
+        userGroups:
+        - duMEq8WxTRKZ4lgFSJykSg
     - type: K8S_TRAFFIC_SPLIT
       name: Full Traffic
       properties:
@@ -85,13 +92,6 @@ phases:
         - destination: ${k8s.stableDestination}
           weight: '0'
         virtualServiceName: ${k8s.virtualServiceName}
-    - type: APPROVAL
-      name: Approve 33%
-      properties:
-        approvalStateType: USER_GROUP
-        timeoutMillis: 86400000
-        userGroups:
-        - duMEq8WxTRKZ4lgFSJykSg
     stepsInParallel: false
   - type: K8S_PHASE_STEP
     name: Wrap Up
