@@ -55,6 +55,13 @@ phases:
         templateVariables: null
         templateVersion: null
         virtualServiceName: ${k8s.virtualServiceName}
+    - type: APPROVAL
+      name: Approve 33%
+      properties:
+        approvalStateType: USER_GROUP
+        timeoutMillis: 86400000
+        userGroups:
+        - duMEq8WxTRKZ4lgFSJykSg
     - type: K8S_TRAFFIC_SPLIT
       name: 33%
       properties:
@@ -67,13 +74,6 @@ phases:
         templateVariables: null
         templateVersion: null
         virtualServiceName: ${k8s.virtualServiceName}
-    - type: APPROVAL
-      name: Approve 33%
-      properties:
-        approvalStateType: USER_GROUP
-        timeoutMillis: 86400000
-        userGroups:
-        - duMEq8WxTRKZ4lgFSJykSg
     - type: K8S_TRAFFIC_SPLIT
       name: 66%
       properties:
