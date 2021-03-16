@@ -62,7 +62,10 @@ phases:
         - destination: ${k8s.canaryDestination}
           weight: '33'
         - destination: ${k8s.stableDestination}
-          weight: '66'
+          weight: '67'
+        templateUuid: null
+        templateVariables: null
+        templateVersion: null
         virtualServiceName: ${k8s.virtualServiceName}
     - type: K8S_TRAFFIC_SPLIT
       name: 66%
