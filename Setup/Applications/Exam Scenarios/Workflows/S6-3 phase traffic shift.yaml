@@ -55,6 +55,15 @@ phases:
         templateVariables: null
         templateVersion: null
         virtualServiceName: ${k8s.virtualServiceName}
+    - type: K8S_TRAFFIC_SPLIT
+      name: 33%
+      properties:
+        istioDestinationWeights:
+        - destination: ${k8s.canaryDestination}
+          weight: '33'
+        - destination: ${k8s.stableDestination}
+          weight: '66'
+        virtualServiceName: ${k8s.virtualServiceName}
     stepsInParallel: false
   - type: K8S_PHASE_STEP
     name: Wrap Up
