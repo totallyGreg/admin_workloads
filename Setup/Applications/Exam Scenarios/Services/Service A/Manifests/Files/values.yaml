@@ -1,7 +1,7 @@
 name: service-a
 replicas: 1
 
-image: library/nginx:1.19.5
+image: ${artifact.metadata.image}
 # dockercfg: ${artifact.source.dockerconfig}
 
 createNamespace: true
