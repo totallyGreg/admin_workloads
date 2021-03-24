@@ -103,7 +103,7 @@ rollbackPhases:
   statefulSet: false
 templatized: true
 userVariables:
-- type: NUMBER
+- type: TEXT
   fixed: false
   mandatory: false
   name: SitePort
