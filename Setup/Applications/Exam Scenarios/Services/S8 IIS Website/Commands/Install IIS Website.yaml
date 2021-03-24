@@ -19,6 +19,6 @@ templateVariables:
 - name: SiteProtocol
   value: http
 - name: SitePort
-  value: ${workflow.variables.SitePort}.
+  value: '8989'
 - name: SiteHostName
   value: '*'
