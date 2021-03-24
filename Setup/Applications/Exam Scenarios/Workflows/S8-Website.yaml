@@ -101,4 +101,10 @@ rollbackPhases:
   provisionNodes: false
   serviceName: S8 IIS Website
   statefulSet: false
-templatized: false
+templatized: true
+userVariables:
+- type: NUMBER
+  fixed: false
+  mandatory: false
+  name: SitePort
+  value: ${serviceVariable.SitePort}
