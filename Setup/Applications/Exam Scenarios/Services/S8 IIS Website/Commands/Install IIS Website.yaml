@@ -5,7 +5,9 @@ targetToAllEnv: true
 templateUri: Altoros-7852/Power Shell Commands/Install IIS Website:latest
 templateVariables:
 - name: ReleaseNo
+  value: ${workflow.ReleaseNo}
 - name: ServiceName
+  value: ${service.name}
 - name: AppPoolName
   value: DefaultAppPool
 - name: AppPoolDotNetVersion
