@@ -19,6 +19,6 @@ templateVariables:
 - name: SiteProtocol
   value: http
 - name: SitePort
-  value: '80'
+  value: '8989'
 - name: SiteHostName
   value: '*'
