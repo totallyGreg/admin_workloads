@@ -50,6 +50,23 @@ phases:
     stepsInParallel: false
   - type: VERIFY_SERVICE
     name: Verify Service
+    steps:
+    - type: HTTP
+      name: HTTP
+      properties:
+        assertion: ' ${httpResponseCode}==200'
+        body: ''
+        executeWithPreviousSteps: false
+        method: GET
+        publishAsVar: false
+        responseProcessingExpressions: ''
+        sweepingOutputName: null
+        sweepingOutputScope: null
+        tags: null
+        templateVariables: ''
+        timeoutMillis: 10000
+        url: http://10.2.0.5:8989
+        useProxy: false
     stepsInParallel: false
   - type: WRAP_UP
     name: Wrap Up
