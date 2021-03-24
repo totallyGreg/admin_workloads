@@ -7,4 +7,7 @@ pipelineStages:
   skipCondition:
     type: DO_NOT_SKIP
   stageName: STAGE 1
-  workflowName: S8 Deploy IIS Application
+  workflowName: S8-Website
+  workflowVariables:
+  - name: SitePort
+    value: '8989'
