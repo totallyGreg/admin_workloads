@@ -107,4 +107,4 @@ userVariables:
   fixed: false
   mandatory: false
   name: SitePort
-  value: ${serviceVariable.SitePort}
+  value: '8989'
